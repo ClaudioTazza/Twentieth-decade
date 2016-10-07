@@ -1,15 +1,18 @@
 #Non so cosa io stia facendo, ma un viaggio di 1000 kilometri inizia sempre con il primo passo
-import Text_archive
+
+import TextArchive
 from Personaggio import Personaggio
 #import Level
-import Events
+#import Events
 
-Protagonista= Personaggio()
+protagonista = Personaggio()
 
-Text_archive.Story()  #Racconta quello che è la trama generale
-Personaggio.Choose_Nick(Protagonista) #Scelta del Nickname
+print TextArchive.story()  #Racconta la trama generale
 
 
-#Text_archive.Hello_player(Protagonista)
+#Personaggio.Choose_Nick(Protagonista)
+protagonista.chooseNick()
+
+print TextArchive.helloPlayer(protagonista)
 
 #Events.EventoIniziale()
