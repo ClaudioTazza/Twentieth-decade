@@ -1,11 +1,15 @@
 from Personaggio import Personaggio
 
-def story():
+def Story():
     return "'Racconto di una trama affascinante'\n"
 
-def helloPlayer(player):
-    return "Hello, " + player.nickname
+def HelloPlayer(player):
+    print "Hello, " + player.nickname
+    print player.Pwr
+    print player.GKeys
 
+#def StatsPlayer(player): Mostra tutte le caratteristiche del personaggio
+ 
 
 if __name__=='__main__':
     p = Personaggio()
