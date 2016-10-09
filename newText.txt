@@ -7,9 +7,10 @@ eventoIniziale(player)
 
 ''' evento iniziale(player):
     print "situazione"
-    return inputChoose(num_Pwr,n_GKey,player)
+    scelta = inputChoose(num_Pwr,n_GKey,player)
     Funzione che prende in entrata l'ipotetico guadagno della Forza e Chiavi d'orate che Evento può dare.
     In caso di guadagno sarà la stessa funzione imputChoose a aumentare il valore di pwr o gKeys del personaggio
+    player.update(evento, scelta)
 '''
 
 livello = 3
@@ -23,4 +24,3 @@ livello = 3
 
 while livello > 0:
       EventoCasuale(livello,player)
-      
