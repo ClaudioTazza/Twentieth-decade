@@ -1,0 +1,26 @@
+from personaggio import Personaggio
+
+player = Personaggio
+inizioTrama() #Stampa la trama
+
+eventoIniziale(player)
+
+''' evento iniziale(player):
+    print "situazione"
+    return inputChoose(num_Pwr,n_GKey,player)
+    Funzione che prende in entrata l'ipotetico guadagno della Forza e Chiavi d'orate che Evento può dare.
+    In caso di guadagno sarà la stessa funzione imputChoose a aumentare il valore di pwr o gKeys del personaggio
+'''
+
+livello = 3
+''' Il gioco è strutturato in 3 livelli, lo scopo del gioco è arrivare al 1 livello e finirlo con
+    o abbastanza chiavi d'oro da aprire il portone finale, o con abbastanza forza per poterlo sfondare
+'''
+'''Livello funzionerà da indice della creazione di personaggi che il giocatore incontrerà
+    più basso è il livello, più forti saranno i personaggi e inoltre, cambierà la lista
+    di eventi, cambiandola con liste con eventi diversi per ogni livello
+'''
+
+while livello > 0:
+      EventoCasuale(livello,player)
+      

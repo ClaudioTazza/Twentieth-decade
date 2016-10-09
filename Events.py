@@ -1,4 +1,4 @@
-from Personaggio import Personaggio
+from personaggio import Personaggio
 
 def eventoIniziale(player):
     Scelta= input("Fai la tua scelta:\n1)Pugnale\n2)Chiave d'oro\n")
@@ -6,4 +6,3 @@ def eventoIniziale(player):
         player.pwrUp(20)
     if Scelta== 2:
 	player.dropGKey()
- 

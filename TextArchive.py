@@ -5,14 +5,14 @@ def Story():
 
 def helloPlayer(player):
     print "Hello, " + player.nickname
-    print player.Pwr
-    print player.GKeys
+    print player.pwr
+    print player.gKeys
 
 def StatsPlayer(player):
     print "#######################\n"\
           "    ", player.nickname,\
-          "\nPwr: ", player.Pwr,\
-          "\nChiavi d'oro: ", player.GKeys,\
+          "\nPwr: ", player.pwr,\
+          "\nChiavi d'oro: ", player.gKeys,\
           "\n#######################"
 
 
