@@ -1,5 +1,6 @@
 from personaggio import Personaggio
 
+turni = 0
 player = Personaggio
 inizioTrama() #Stampa la trama
 
@@ -7,10 +8,9 @@ eventoIniziale(player)
 
 ''' evento iniziale(player):
     print "situazione"
-    scelta = inputChoose(num_Pwr,n_GKey,player)
+    inputChoose(num_Pwr,n_GKey,player)
     Funzione che prende in entrata l'ipotetico guadagno della Forza e Chiavi d'orate che Evento può dare.
     In caso di guadagno sarà la stessa funzione imputChoose a aumentare il valore di pwr o gKeys del personaggio
-    player.update(evento, scelta)
 '''
 
 livello = 3
@@ -22,5 +22,12 @@ livello = 3
     di eventi, cambiandola con liste con eventi diversi per ogni livello
 '''
 
+
+
 while livello > 0:
-      EventoCasuale(livello,player)
+      EventoCasuale(livello,turni,player)
+      turni += 1
+
+''' All'aumentare dei turni aumenta la percentuale di eventi che permettono il passaggio al livello inferiore
+    Anche se per ora non so come si faccia. Preferisco affrontare il discorso a beta finita.
+'''
